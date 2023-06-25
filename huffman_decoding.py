@@ -57,7 +57,24 @@ def dfs_hidden(obj, already):
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 def decodeHuff(root, s):
-	#Enter Your Code Here
+    result = ""
+
+    node = root
+    i = 0
+    while i < len(s):
+        while node.left != None or node.right != None:
+            if s[i] == "0":
+                node = node.left
+            else:
+                node = node.right
+            i += 1
+        
+        result += node.data
+        node = root
+
+    print(result)
+            
+
 
 ip = input()
 freq = {}#maps each character to its frequency
