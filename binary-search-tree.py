@@ -1,4 +1,7 @@
 # https://www.hackerrank.com/challenges/is-binary-search-tree/problem
+# 
+# cool solution with c++
+# https://www.hackerrank.com/challenges/is-binary-search-tree/forum/comments/1295649
 
 """ Node is defined as
 class node:
@@ -8,39 +11,17 @@ class node:
       self.right = None
 """
 def check_binary_search_tree_(root):
-    print("root.data:", root.data)
+    return check_subtree(root, 0, 10000)
 
-    if root.left != None:
-        if root.left.data > root.data:
-            return False
-        else:
-            print("left.data:", root.left.data, "on root.data", root.data)
-            check_binary_search_tree_(root.left)
-
-    if root.right != None:
-        if root.right.data < root.data:
-            return False
-        else:
-            print("right.data:", root.right.data, "on root.data", root.data)
-            check_binary_search_tree_(root.right)
-
-    return True
+def check_subtree(node, min, max):
     
-
-
-
-'''''''''
-    if (root.left and root.data < root.left.data) or (root.right and root.data > root.right.data):
+    if node.data <= min or node.data >= max:
         return False
-    else:
-        if root.left:
-            check_binary_search_tree_(root.left)
-            
-        if root.right:
-            check_binary_search_tree_(root.right)
-            
-    return True        
-        
-    print(root.info, end = " ")
     
+    if node.left and not check_subtree(node.left, min, node.data):
+        return False
         
+    if node.right and not check_subtree(node.right, node.data, max):
+        return False
+    
+    return True
