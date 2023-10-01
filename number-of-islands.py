@@ -52,4 +52,3 @@ class Solution:
         self.exploreIsland(grid, island, x - 1, y)
         self.exploreIsland(grid, island, x, y + 1)
         self.exploreIsland(grid, island, x + 1, y)
-    
