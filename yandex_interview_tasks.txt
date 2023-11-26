@@ -17,22 +17,21 @@ hash table:
 https://leetcode.com/problems/single-number/ - решить за O(1) по памяти 
 https://leetcode.com/problems/two-sum/ 
 https://leetcode.com/problems/4sum/ check 
-https://leetcode.com/problems/group-anagrams/ 
+ok - https://leetcode.com/problems/group-anagrams/ 
 https://leetcode.com/problems/valid-anagram/ 
 https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
 
 queue/stack:
-https://leetcode.com/problems/valid-parentheses/
+NOT yet ok - https://leetcode.com/problems/valid-parentheses/
 
 
 dfs/bfs:
-https://leetcode.com/problems/number-of-islands/ 
-https://leetcode.com/problems/remove-invalid-parentheses/
-check
+ok - https://leetcode.com/problems/number-of-islands/ 
+NOT yet ok - https://leetcode.com/problems/remove-invalid-parentheses/
 
 sort:
-https://leetcode.com/problems/merge-intervals/
+ok - https://leetcode.com/problems/merge-intervals/
 
 heap/hash:
 https://leetcode.com/problems/top-k-frequent-words/ check 
