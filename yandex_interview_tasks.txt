@@ -23,7 +23,7 @@ https://leetcode.com/problems/find-all-anagrams-in-a-string/
 
 
 queue/stack:
-NOT yet ok - https://leetcode.com/problems/valid-parentheses/
+ok - https://leetcode.com/problems/valid-parentheses/
 
 
 dfs/bfs:
