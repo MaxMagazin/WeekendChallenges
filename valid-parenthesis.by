@@ -1,0 +1,55 @@
+#https://leetcode.com/problems/valid-parentheses/
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        counter = {
+            '(': 0,
+            ')': 0,
+            '{': 0,
+            '}': 0,
+            '[': 0,
+            ']': 0
+        }
+
+        openChar = ['(', '{', '[']
+        closeChar = [')', '}', ']']
+
+        if s[0] not in openChar or s[len(s) - 1] not in closeChar:
+            return False
+
+        openCloseDict = dict(zip(openChar, closeChar))
+
+        counter[s[0]] += 1
+
+        #for i in range(1, len(s)-1):
+        i = 1
+        while i <= (len(s) - 1):
+            letter = s[i]
+            prevLetter = s[i-1]
+            i += 1
+
+            counter[letter] += 1
+
+            if letter in closeChar:
+                if prevLetter in openChar and openCloseDict[prevLetter] != letter:
+                    print("f0")
+                    return False
+
+                # )))]]}}}}))))
+                # if prevLetter in closeChar:
+                #     continue
+        
+        if counter['('] != counter[')']:
+            print(counter)
+            print("f1")
+            return False
+
+        if counter['{'] != counter['}']:
+            print("f2")
+            return False
+
+        if counter['['] != counter[']']:
+            print("f3")
+            return False
+
+        return True

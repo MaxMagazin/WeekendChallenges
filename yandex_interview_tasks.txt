@@ -34,8 +34,8 @@ sort:
 ok - https://leetcode.com/problems/merge-intervals/
 
 heap/hash:
-https://leetcode.com/problems/top-k-frequent-words/ check 
-https://leetcode.com/problems/top-k-frequent-elements/ check
+https://leetcode.com/problems/top-k-frequent-words/
+https://leetcode.com/problems/top-k-frequent-elements/
 
 two pointers:
 ok - https://leetcode.com/problems/container-with-most-water/
